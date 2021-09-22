@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		E833EA0326FB53AD00038AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833EA0226FB53AD00038AB0 /* AppDelegate.swift */; };
 		E833EA0526FB53AD00038AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833EA0426FB53AD00038AB0 /* SceneDelegate.swift */; };
-		E833EA0726FB53AD00038AB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833EA0626FB53AD00038AB0 /* ViewController.swift */; };
 		E833EA0A26FB53AD00038AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E833EA0826FB53AD00038AB0 /* Main.storyboard */; };
 		E833EA0C26FB53B500038AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E833EA0B26FB53B500038AB0 /* Assets.xcassets */; };
 		E833EA0F26FB53B500038AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E833EA0D26FB53B500038AB0 /* LaunchScreen.storyboard */; };
+		E833EA2326FB554500038AB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833EA2226FB554500038AB0 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E833E9FF26FB53AD00038AB0 /* TV Show Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Show Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E833EA0226FB53AD00038AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E833EA0426FB53AD00038AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E833EA0626FB53AD00038AB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E833EA0926FB53AD00038AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E833EA0B26FB53B500038AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E833EA0E26FB53B500038AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E833EA1026FB53B500038AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E833EA2226FB554500038AB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,63 @@
 		E833EA0126FB53AD00038AB0 /* TV Show Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				E833EA0226FB53AD00038AB0 /* AppDelegate.swift */,
-				E833EA0426FB53AD00038AB0 /* SceneDelegate.swift */,
-				E833EA0626FB53AD00038AB0 /* ViewController.swift */,
-				E833EA0826FB53AD00038AB0 /* Main.storyboard */,
-				E833EA0B26FB53B500038AB0 /* Assets.xcassets */,
-				E833EA0D26FB53B500038AB0 /* LaunchScreen.storyboard */,
-				E833EA1026FB53B500038AB0 /* Info.plist */,
+				E833EA1E26FB54AF00038AB0 /* Scenes */,
+				E833EA1926FB546100038AB0 /* SupportingFiles */,
+				E833EA1B26FB547D00038AB0 /* Storyboards */,
+				E833EA1C26FB548B00038AB0 /* Resources */,
+				E833EA1D26FB54A000038AB0 /* ConfigurationFiles */,
 			);
 			path = "TV Show Tracker";
+			sourceTree = "<group>";
+		};
+		E833EA1926FB546100038AB0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E833EA0226FB53AD00038AB0 /* AppDelegate.swift */,
+				E833EA0426FB53AD00038AB0 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E833EA1B26FB547D00038AB0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E833EA0826FB53AD00038AB0 /* Main.storyboard */,
+				E833EA0D26FB53B500038AB0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E833EA1C26FB548B00038AB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E833EA0B26FB53B500038AB0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E833EA1D26FB54A000038AB0 /* ConfigurationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E833EA1026FB53B500038AB0 /* Info.plist */,
+			);
+			path = ConfigurationFiles;
+			sourceTree = "<group>";
+		};
+		E833EA1E26FB54AF00038AB0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E833EA2126FB553000038AB0 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E833EA2126FB553000038AB0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E833EA2226FB554500038AB0 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E833EA0726FB53AD00038AB0 /* ViewController.swift in Sources */,
 				E833EA0326FB53AD00038AB0 /* AppDelegate.swift in Sources */,
 				E833EA0526FB53AD00038AB0 /* SceneDelegate.swift in Sources */,
+				E833EA2326FB554500038AB0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Y8L32XBX;
-				INFOPLIST_FILE = "TV Show Tracker/Info.plist";
+				INFOPLIST_FILE = "TV Show Tracker/ConfigurationFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "practice.com.TV-Show-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Y8L32XBX;
-				INFOPLIST_FILE = "TV Show Tracker/Info.plist";
+				INFOPLIST_FILE = "TV Show Tracker/ConfigurationFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "practice.com.TV-Show-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
