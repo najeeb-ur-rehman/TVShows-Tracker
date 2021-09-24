@@ -2,28 +2,49 @@
 //  HomeViewController.swift
 //  TV Show Tracker
 //
-//  Created by Najeeb VenD on 22/09/2021.
+//  Created by Najeeb VenD on 23/09/2021.
 //
 
 import UIKit
 
 class HomeViewController: UIViewController {
 
+	// MARK: Outlets
+	
+	@IBOutlet var homeView: HomeView!
+	
+	// MARK: ViewController Lifecycle Methods
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		setupNavigationBarAppearance()
     }
-    
 
-    /*
-    // MARK: - Navigation
+	// MARK: Actions
+	
+	@IBAction
+	func addNewTVShowAction(_ sender: UIButton) {
+		let addNewTVShowViewController = AddNewTVShowViewBuilder.build()
+		navigationController?.pushViewController(addNewTVShowViewController, animated: true)
+	}
+	
+	@IBAction
+	func showTVShowsListAction(_ sender: UIButton) {
+		let tvShowListViewController = TVShowListViewBuilder.build()
+		navigationController?.pushViewController(tvShowListViewController, animated: true)
+	}
+	
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+// MARK: - Private Methods
 
+private extension HomeViewController {
+	
+	func setupNavigationBarAppearance() {
+		title = "TVShows Tracker"
+		navigationController?.navigationBar.tintColor = Color.primaryInverse
+		navigationItem.backButtonTitle = " "
+	}
+	
 }
